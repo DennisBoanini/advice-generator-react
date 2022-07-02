@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/advice-generator-react/static/css/main.865b4f26.css",
-    "main.js": "/advice-generator-react/static/js/main.b9baf9ae.js",
+    "main.js": "/advice-generator-react/static/js/main.a79b3e6f.js",
     "static/js/787.4d81706f.chunk.js": "/advice-generator-react/static/js/787.4d81706f.chunk.js",
     "index.html": "/advice-generator-react/index.html",
     "static/media/icon-dice.svg": "/advice-generator-react/static/media/icon-dice.08691e4c24c11b5ba564.svg",
     "static/media/pattern-divider-desktop.svg": "/advice-generator-react/static/media/pattern-divider-desktop.ed9685263f6b47d21c88.svg",
     "main.865b4f26.css.map": "/advice-generator-react/static/css/main.865b4f26.css.map",
-    "main.b9baf9ae.js.map": "/advice-generator-react/static/js/main.b9baf9ae.js.map",
+    "main.a79b3e6f.js.map": "/advice-generator-react/static/js/main.a79b3e6f.js.map",
     "787.4d81706f.chunk.js.map": "/advice-generator-react/static/js/787.4d81706f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.865b4f26.css",
-    "static/js/main.b9baf9ae.js"
+    "static/js/main.a79b3e6f.js"
   ]
 }
