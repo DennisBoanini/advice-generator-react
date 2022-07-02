@@ -1,26 +1,31 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 
+interface AdviceResponse {
+    slip: {id: number; advice: string; };
+}
+
 function App() {
 
-    const [advice, setAdvice] = useState(null);
+    const [advice, setAdvice] = useState('');
+    const [adviceNumber, setAdviceNumber] = useState(0);
 
-    useEffect(() => {
+    useEffect(() => doGetAdvice(), []);
+    const getAdvice = () => doGetAdvice();
+
+    function doGetAdvice() {
         fetch('https://api.adviceslip.com/advice')
             .then(response => response.json())
-            .then(data => setAdvice(data.slip.advice));
-    }, [])
-
-    const getAdvice = () => {
-        fetch('https://api.adviceslip.com/advice')
-            .then(response => response.json())
-            .then(data => setAdvice(data.slip.advice));
+            .then((data: AdviceResponse) => {
+                setAdvice(data.slip.advice);
+                setAdviceNumber(data.slip.id);
+            });
     }
 
     return (
         <div className="App">
             <section className="advice-container">
-                <p className="advice-number">advice #<span id="advice-id"></span></p>
+                <p className="advice-number">advice #{adviceNumber}</p>
                 <p className="advice-text" id="advice-text">
                     {advice}
                 </p>
